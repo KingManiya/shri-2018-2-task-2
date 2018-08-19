@@ -4,7 +4,9 @@
   "description": "Задание на вёрстку",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack --mode=production"
+    "build": "webpack --mode=production",
+    "stylelint": "stylelint src/**/*.scss",
+    "stylelint-fix": "stylelint --fix src/**/*.scss"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,9 @@
     "postcss-loader": "^3.0.0",
     "resolve-url-loader": "^2.3.0",
     "sass-loader": "^7.1.0",
+    "stylelint": "^9.4.0",
+    "stylelint-config-sass-guidelines": "^5.0.0",
+    "stylelint-config-standard": "^18.2.0",
     "url-loader": "^1.0.1",
     "webpack": "^4.16.5",
     "webpack-cli": "^3.1.0",
