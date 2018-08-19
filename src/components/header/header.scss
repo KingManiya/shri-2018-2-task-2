@@ -1,0 +1,10 @@
+@import "../core/variables";
+
+.header {
+  height: 92px;
+  border: 1px;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center;
+  padding: $template-padding;
+}

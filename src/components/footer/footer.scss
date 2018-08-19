@@ -1,0 +1,8 @@
+@import "../core/variables";
+
+.footer {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: $template-padding;
+}
