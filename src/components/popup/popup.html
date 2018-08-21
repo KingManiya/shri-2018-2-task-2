@@ -80,7 +80,20 @@
             </div>
             <div class="popup__main__content">
                 <!--Thermostat-->
-
+                <div class="thermostat thermostat_center" id="thermostat">
+                    <svg width="100%" height="100%">
+                        <g fill="none" stroke-width="24" stroke-dasharray="1 4">
+                            <path id="thermostatYellow" stroke="#F5A623"
+                                  d="M 162 198.60254037844385 A 100 100 0 1 0 61.99999999999996 198.60254037844385"></path>
+                            <path id="thermostatGrey" stroke="#333333"
+                                  d="M 162 198.60254037844385 A 100 100 0 0 0 207.30426858057672 142.2835993620524"></path>
+                        </g>
+                    </svg>
+                    <div class="thermostat__regulator">
+                        <div id='thermostatTemp' class="text_main_66">+17</div>
+                    </div>
+                    <div id="thermostatArrow" class="thermostat__arrow" style="transform: rotate(108deg);"></div>
+                </div>
                 <!--/Thermostat-->
             </div>
         </div>

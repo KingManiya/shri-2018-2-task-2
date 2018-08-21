@@ -1,3 +1,7 @@
+import renderThermostat from "./thermostat/thermostat";
+
+renderThermostat(108); //+17 градусов
+
 var popup;
 function togglePopup(type) {
     document.body.classList.toggle('with_popup');
