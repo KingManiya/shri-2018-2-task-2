@@ -1,8 +1,20 @@
 @import "../core/variables";
 
 .footer {
-  height: 64px;
+  margin-top: auto;
+  //margin-top: 4px;
+  height: 55px;
   display: flex;
   align-items: center;
-  padding: $template-padding;
+  padding: 0 $template-padding;
 }
+
+.footer__link {
+  margin-right: 17px;
+}
+
+.footer__yandex {
+  margin-left: auto;
+}
+
+@import "footer_mobile";

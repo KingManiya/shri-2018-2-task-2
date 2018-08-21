@@ -1,0 +1,34 @@
+@import "../../../core/variables";
+
+@media all and (max-width: $mobile-width) {
+  .block__scenarios {
+    margin-left: 0;
+  }
+
+  .block__header_scenarios {
+    margin-top: 31px;
+  }
+
+  .block__scenarios__content {
+    height: 105px;
+    margin-left: -$template-padding-mobile;
+    margin-right: -$template-padding-mobile;
+    margin-bottom: -5px;
+  }
+
+  .block__scenarios__hide__scroll {
+    flex-wrap: nowrap;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .block__scenarios__hide__scroll::before {
+    content: "";
+    min-width: $template-padding-mobile;
+  }
+
+  .block__scenarios__hide__scroll::after {
+    content: "";
+    min-width: $template-padding-mobile - 15px;
+  }
+}

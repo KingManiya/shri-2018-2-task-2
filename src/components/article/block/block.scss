@@ -1,0 +1,16 @@
+.block__header {
+  margin-top: 29px;
+  margin-bottom: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.block__header__text {
+  margin-right: 13px;
+  flex-shrink: 0;
+}
+
+@import "block__main/block__main";
+@import "block__scenarios/block__scenarios";
+@import "block__devices/block__devices";

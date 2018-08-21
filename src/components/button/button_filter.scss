@@ -1,0 +1,12 @@
+@import "../core/colors";
+
+.button_filter {
+  height: 30px;
+  line-height: 30px;
+  padding: 0 15px;
+  margin-right: 10px;
+  background-color: $gray2;
+  color: $black;// !important;
+  font-weight: bold;
+  font-size: 13px;
+}

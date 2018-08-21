@@ -1,0 +1,33 @@
+@import "../../core/variables";
+@import "../../core/colors";
+
+.card {
+  box-sizing: border-box;
+  border-radius: $border-radius;
+  background-color: $gray2;
+  padding: 15px;
+  width: 200px;
+  height: 120px;
+  margin: 0 15px 15px 0;
+  cursor: pointer;
+  transition: box-shadow 0.3s, background-color 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.card_small {
+  height: 100px;
+}
+
+.card:hover {
+  box-shadow: $box-shadow;
+  background-color: $white;
+}
+
+.card__status {
+  margin-top: 4px;
+}
+
+@import "card__icon";

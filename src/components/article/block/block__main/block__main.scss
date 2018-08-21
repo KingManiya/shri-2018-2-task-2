@@ -1,0 +1,105 @@
+@import "../../../core/variables";
+
+.block_main {
+  //width: 630px;
+}
+
+.block__header_main {
+  //
+}
+
+.block__main__content {
+  background-image: url("img/bg.png");
+  width: 630px;
+  height: 331px;
+  border-radius: $border-radius;
+
+  display: flex;
+}
+
+.block__main__column1 {
+  flex-grow: 1;
+  padding: 25px;
+}
+
+.block__main__status {
+  font-weight: normal !important;
+  margin-top: 6px;
+}
+
+.block__main__weather {
+  margin-top: 25px;
+  display: flex;
+}
+
+.block__main__weather__place {
+  margin-right: 19px;
+}
+
+.block__main__weather__place__temperature {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+}
+
+.block__main__weather__place__icon__drizzle {
+  background-image: url("img/cloud-drizzle.svg");
+  width: 26px;
+  height: 26px;
+  margin-left: 5px;
+}
+
+.block__main__column2 {
+  //margin-top: 20px;
+  margin-right: 20px;
+
+  width: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.block__main__column2__hide__scroll {
+  position: absolute;
+  top: 0;
+  right: -17px;
+  left: 0;
+  bottom: 0;
+
+  overflow-y: scroll;
+}
+
+.block__main__column2__hide__scroll::before {
+  content: "";
+  display: block;
+  height: 20px;
+}
+
+.block__main__column2__hide__scroll::after {
+  content: " ";
+  display: block;
+  min-height: 5px;
+}
+
+//.card_block_main:first-child {
+//  margin-top: 20px;
+//}
+//
+//.card_block_main:last-child {
+//  margin-bottom: 20px;
+//}
+
+.block__main__column2__icon__up {
+  background-image: url("img/arrow-double.svg");
+  width: 16px;
+  height: 16px;
+
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  //right: (200px - 16px) /2; //центр относительно родительского блока
+  pointer-events: none;
+}
+
+@import "block__main_mobile";

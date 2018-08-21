@@ -1,0 +1,35 @@
+.block__scenarios {
+  flex-grow: 1;
+  margin-left: 26px;
+  //display: flex;
+  //flex-direction: column;
+}
+
+.block__scenarios__content {
+  //flex-grow: 1;
+
+  height: 335px; //3 ряда по 100 с отсупом 15 и 5 запас для тени
+  overflow: hidden;
+  position: relative;
+  margin-bottom: -5px; //для тени при наведии на карточку
+}
+
+.block__scenarios__hide__scroll {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: -17px;
+  left: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+  margin-right: -15px;
+  margin-bottom: -15px;
+}
+
+@import "block__scenarios_mobile";

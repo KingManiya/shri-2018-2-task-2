@@ -1,0 +1,43 @@
+@import "../../../core/variables";
+
+//.block_devices {
+//
+//}
+
+.block__header_devices {
+  height: 30px;
+}
+
+.block__devices__content {
+  overflow: hidden;
+  position: relative;
+  height: 125px; //для показа тени при наведении
+  margin-bottom: -5px; //для показа тени при наведении
+  margin-right: -$template-padding;
+  margin-left: -$template-padding;
+}
+
+.block__devices__hide__scroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: -22px;
+  right: 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+
+  //margin-bottom: -15px;
+}
+
+.block__devices__hide__scroll::before {
+  content: "";
+  min-width: $template-padding;
+}
+
+.block__devices__hide__scroll::after {
+  content: "";
+  min-width: $template-padding - 15px;
+}
+
+@import "block__devices_mobile";

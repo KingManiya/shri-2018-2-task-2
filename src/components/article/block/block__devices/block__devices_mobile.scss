@@ -1,0 +1,29 @@
+@import "../../../core/variables";
+
+@media all and (max-width: $mobile-width) {
+  .block__header_devices {
+    margin-top: 24px;
+    margin-bottom: 17px;
+  }
+
+  .block__content_devices {
+    margin-left: -$template-padding-mobile;
+    margin-right: -$template-padding-mobile;
+  }
+
+  .button_filter:not(:nth-child(2)) {
+    display: none;
+  }
+
+  .button_filter:nth-child(2) {
+    margin-left: auto;
+  }
+
+  .block__devices__hide__scroll::before {
+    min-width: $template-padding-mobile;
+  }
+
+  .block__devices__hide__scroll::after {
+    min-width: $template-padding-mobile - 15px;
+  }
+}

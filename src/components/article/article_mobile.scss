@@ -1,0 +1,14 @@
+@import "../core/variables";
+
+@media all and (max-width: $mobile-width) {
+  .article {
+    margin-top: 66px;
+    //min-height: 2000px; //temp
+    padding: 0 $template-padding-mobile;
+    flex-shrink: 0;
+  }
+
+  .article__blocks {
+    flex-direction: column;
+  }
+}

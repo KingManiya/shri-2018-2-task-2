@@ -1,0 +1,20 @@
+@import "../core/variables";
+
+@media all and (max-width: $mobile-width) {
+  .footer {
+    height: initial;
+    flex-direction: column;
+    flex-shrink: 0;
+    padding: $template-padding-mobile;
+  }
+
+  .footer__link {
+    margin-top: 6px;
+    margin-right: 0;
+  }
+
+  .footer__yandex {
+    margin-top: 6px;
+    margin-left: 0;
+  }
+}
