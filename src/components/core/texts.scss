@@ -5,11 +5,6 @@
   color: $main;
 }
 
-//.text__main_13 {
-//  @extend .text_main;
-//  font-size: 13px;
-//}
-
 .text_main_14 {
   @extend %text-main;
   font-size: 14px;
@@ -24,12 +19,7 @@
   @extend %text-main;
   font-size: 18px;
 }
-//
-//.text__main_18 {
-//  @extend .text_main;
-//  font-size: 18px;
-//}
-//
+
 .text_main_27 {
   @extend %text-main;
   font-size: 27px;
@@ -39,13 +29,12 @@
   @extend %text-main;
   font-size: 36px;
 }
-//
-//.text__main_66 {
-//  @extend .text_main;
-//  font-size: 66px;
-//}
 
-//////
+.text_main_66 {
+  @extend %text-main;
+  font-size: 66px;
+}
+
 .text_second {
   font-size: 12px;
   color: $gray;
@@ -55,48 +44,3 @@
   font-size: 14px;
   color: $gray;
 }
-
-//.text_main {
-//  font-weight: bold;
-//  font-size: 14px;
-//  color: $main;
-//}
-
-//.text_main-bold {
-//  font-size: 14px;
-//  color: $main
-//}
-
-//.text-second {
-//  font-size: 12px;
-//  color: $gray;
-//}
-//
-//.text-header {
-//  font-weight: bold;
-//  font-size: 18px;
-//  color: $main;
-//}
-//
-//.text-hello {
-//  font-weight: bold;
-//  font-size: 27px;
-//  color: $main;
-//}
-//
-//.text-status {
-//  margin-top: 6px;
-//  font-size: 14px;
-//  color: $main;
-//}
-//
-////////
-//
-//
-//
-//.text__status {
-//  margin-top: 6px;
-//  font-size: 14px;
-//  color: $main;
-//}
-//

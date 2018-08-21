@@ -1,0 +1,60 @@
+@import "../core/variables";
+
+@media all and (max-width: $mobile-width) {
+  .popup {
+    width: calc(100vw - #{$template-padding-mobile} * 2);
+    height: calc(100vh - #{$template-padding-mobile} * 2);
+  }
+
+  .popup,
+  .popup__main,
+  .popup__main__content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .popup__main,
+  .popup__main__content {
+    flex-grow: 1;
+  }
+
+  .popup__main {
+    padding: 20px;
+  }
+
+  .popup__main__content {
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  //-----Заголовок-----
+  .popup__main__header__texts__name {
+    font-size: 18px !important;
+  }
+
+  .popup__main__header__texts__status {
+    font-size: 12px !important;
+    margin-top: 5px;
+  }
+
+  //скрытие значка и температуры справа
+  .popup__main__header__temperature,
+  .popup__main__header__icon {
+    display: none;
+  }
+  //^-----Заголовок-----^
+
+  //-----Кнопки-----
+  .popup__footer {
+    flex-direction: column;
+  }
+
+  .button__popup_footer {
+    margin-top: 15px;
+  }
+
+  .button__popup_footer_active {
+    margin-right: initial;
+  }
+  //^-----Кнопки-----^
+}
