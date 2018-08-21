@@ -26,8 +26,11 @@
   background-color: $white;
 }
 
+.card__icon {
+  flex-grow: 1;
+  background: no-repeat top left;
+}
+
 .card__status {
   margin-top: 4px;
 }
-
-@import "card__icon";
