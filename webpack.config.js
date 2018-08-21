@@ -1,6 +1,7 @@
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlBeautifyPlugin  = require("html-beautify-webpack-plugin");
 const path = require('path');
 const PUBLIC_PATH = path.join(__dirname, 'public');
 const SRC_PATH = path.join(__dirname, 'src');
@@ -25,6 +26,16 @@ module.exports = {
     module: {
 
         rules: [
+            {
+                test: /\.html$/,
+                use: [{
+                    loader: 'html-loader',
+                    options: {
+                        interpolate: true,
+                        // minimize: true,
+                    },
+                }],
+            },
             {
                 test: /\.scss$/,
                 use: [
@@ -53,6 +64,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.resolve(SRC_PATH, 'index.html')
         }),
+        new HtmlBeautifyPlugin(),
     ],
     devServer: {
         contentBase: PUBLIC_PATH,
