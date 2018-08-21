@@ -11,11 +11,11 @@
     margin-right: -$template-padding-mobile;
   }
 
-  .button_filter:not(:nth-child(2)) {
+  .button_block_devices:not(:nth-child(2)) {
     display: none;
   }
 
-  .button_filter:nth-child(2) {
+  .button_block_devices:nth-child(2) {
     margin-left: auto;
   }
 
