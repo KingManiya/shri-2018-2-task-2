@@ -1,0 +1,3 @@
+@mixin linear-gradient-temperature($deg) {
+  background-image: linear-gradient($deg, #068fff 2%, #ffd800 51%, #f76b1c 100%);
+}

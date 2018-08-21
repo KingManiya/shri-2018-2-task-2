@@ -1,0 +1,26 @@
+@import "../../core/variables";
+@import "slider_mixins";
+
+@media all and (max-width: $mobile-width) {
+  .slider {
+    flex-direction: column-reverse;
+    width: 60px;
+    flex-grow: 1;
+    margin: 25px auto 5px;
+  }
+
+  //TODO: миксимы слайдера в отдельный файл
+  .slider_temperature {
+    @include linear-gradient-temperature(0deg);
+  }
+
+  .slider_sun {
+    background-image: linear-gradient(0deg, #ffe88c 0%, #ffb100 100%);
+    padding: 13px;
+  }
+
+  .slider__value {
+    top: 28%;
+    left: 0;
+  }
+}
