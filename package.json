@@ -21,6 +21,7 @@
   "devDependencies": {
     "autoprefixer": "^9.1.0",
     "css-loader": "^1.0.0",
+    "cssnano": "^4.1.0",
     "file-loader": "^1.1.11",
     "html-beautify-webpack-plugin": "^1.0.5",
     "html-loader": "^0.5.5",

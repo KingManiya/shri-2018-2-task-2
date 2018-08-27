@@ -6,17 +6,7 @@ const path = require('path');
 const PUBLIC_PATH = path.join(__dirname, 'public');
 const SRC_PATH = path.join(__dirname, 'src');
 
-//postcss-loader
-const postcssLoader = {
-    loader: 'postcss-loader',
-    options: {
-        plugins: () => [
-            // require('autoprefixer')('last 2 versions', 'Safari >= 9', 'ie >= 11', 'ff >= 40', 'Chrome >= 40', 'iOS >= 9'),
-        ],
-    },
-};
-
-module.exports = {
+module.exports = (env, argv) => ({
     mode: 'development',
     entry: './src/index.js',
     output: {
@@ -41,9 +31,18 @@ module.exports = {
                 use: [
                     MiniCssExtractPlugin.loader,
                     'css-loader',
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            ident: 'postcss',
+                            plugins: argv.mode === 'production' ? [
+                                require('autoprefixer')('last 2 versions', 'Safari >= 9', 'ie >= 11', 'ff >= 40', 'Chrome >= 40', 'iOS >= 9'),
+                                require('cssnano')(),
+                            ] : [],
+                        },
+                    },
                     'resolve-url-loader',
                     "sass-loader?sourceMap",
-                    postcssLoader
                 ]
             },
             {
@@ -72,4 +71,4 @@ module.exports = {
         port: 9000,
         host: 'localhost'
     },
-};
+});
