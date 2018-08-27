@@ -11,12 +11,15 @@
     margin-right: -$template-padding-mobile;
   }
 
-  .button_block_devices:not(:nth-child(2)) {
+  .button_block_devices {
     display: none;
   }
 
-  .button_block_devices:nth-child(2) {
+  .button_block_devices_mobile {
     margin-left: auto;
+    display: flex;
+    align-items: center;
+    margin-right: 0 !important;
   }
 
   .block__devices__hide__scroll::before {

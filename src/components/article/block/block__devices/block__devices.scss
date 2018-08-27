@@ -1,9 +1,5 @@
 @import "../../../core/variables";
 
-//.block_devices {
-//
-//}
-
 .block__header_devices {
   height: 30px;
 }
@@ -38,6 +34,17 @@
 .block__devices__hide__scroll::after {
   content: "";
   min-width: $template-padding - 15px;
+}
+
+.button_block_devices_mobile {
+  display: none;
+}
+
+.block__devices__arrowDown {
+  background: url("./img/arrow-down.svg") no-repeat center;
+  width: 12px;
+  height: 12px;
+  margin-left: 4px;
 }
 
 @import "block__devices_mobile";
