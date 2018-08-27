@@ -2,8 +2,8 @@
 
 @media all and (max-width: $mobile-width) {
   .popup {
-    width: calc(100vw - #{$template-padding-mobile} * 2);
-    height: calc(100vh - #{$template-padding-mobile} * 2);
+    width: calc(100% - #{$template-padding-mobile} * 2);
+    height: calc(100% - #{$template-padding-mobile} * 2);
   }
 
   .popup,
