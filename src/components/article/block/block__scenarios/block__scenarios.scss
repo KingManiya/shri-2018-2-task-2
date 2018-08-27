@@ -15,18 +15,10 @@
 }
 
 .block__scenarios__hide__scroll {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: -17px;
-  left: 0;
-
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-start;
 
-  overflow-x: scroll;
-  overflow-y: hidden;
+  transition: transform 1s;
 
   margin-right: -15px;
   margin-bottom: -15px;

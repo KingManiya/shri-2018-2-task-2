@@ -26,4 +26,8 @@
   .block__devices__hide__scroll::after {
     min-width: $template-padding-mobile - 15px;
   }
+
+  .block__devices__arrows {
+    display: none !important;
+  }
 }

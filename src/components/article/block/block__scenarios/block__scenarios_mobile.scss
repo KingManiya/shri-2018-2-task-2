@@ -17,6 +17,15 @@
   }
 
   .block__scenarios__hide__scroll {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: -17px;
+    left: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    transform: translateY(0) !important;
+    transition: initial;
     flex-wrap: nowrap;
     margin-right: 0;
     margin-bottom: 0;
@@ -30,5 +39,9 @@
   .block__scenarios__hide__scroll::after {
     content: "";
     min-width: $template-padding-mobile - 15px;
+  }
+
+  .block__scenarios__arrows {
+    display: none !important;
   }
 }

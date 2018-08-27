@@ -1,0 +1,21 @@
+.arrows {
+  margin-left: auto;
+  display: flex;
+}
+
+.arrow {
+  background: url("./img/arrow-left.svg") no-repeat center;
+  width: 15px;
+  height: 16px;
+  opacity: 0.3;
+}
+
+.arrow_right {
+  transform: rotate(180deg);
+  margin-left: 15px;
+}
+
+.arrow_active {
+  opacity: 1;
+  cursor: pointer;
+}
