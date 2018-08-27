@@ -1,4 +1,5 @@
 import renderThermostat from "./thermostat/thermostat";
+import "./slider/slider";
 
 renderThermostat(108); //+17 градусов
 
