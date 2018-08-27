@@ -5,7 +5,7 @@ function scrollTo(element, to, duration) {
     var perTick = difference / duration * 10;
 
     clearTimeout(window.devicesTimeout);
-    window.devicesTimeout = setTimeout(function() {
+    window.devicesTimeout = setTimeout(function () {
         element.scrollLeft = element.scrollLeft + perTick;
         if (element.scrollLeft === to) return;
         scrollTo(element, to, duration - 10);

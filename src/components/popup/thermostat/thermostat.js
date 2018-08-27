@@ -36,7 +36,7 @@ function registerThermostatEvents() {
         var centerX = stat.left + stat.width / 2;
         var centerY = stat.top + stat.height / 2;
         var touch = e.touches[0];
-        var deg = Math.atan2(centerY - touch.clientY, centerX -touch.clientX) * 180 / Math.PI - 90;
+        var deg = Math.atan2(centerY - touch.clientY, centerX - touch.clientX) * 180 / Math.PI - 90;
 
         renderThermostat(deg)
     })
@@ -64,7 +64,7 @@ export default function renderThermostat(deg) {
     thermostatYellow.setAttribute("d", describeArc(centerX, centerY, radius, arcMin, arcMax));
     thermostatGrey.setAttribute("d", describeArc(centerX, centerY, radius, deg, arcMax));
     //Поворот стрелки термостата
-    thermostatArrow.style.transform = 'rotate('+ deg +'deg)';
+    thermostatArrow.style.transform = 'rotate(' + deg + 'deg)';
     //Вывод текста внутри термостата
     temp = Math.round(temp);
     thermostatTemp.innerText = (temp > 0 ? '+' : '') + temp;
@@ -72,7 +72,7 @@ export default function renderThermostat(deg) {
 
 //Расчет координат для отрисовки дуги в svg
 //Взято с https://stackoverflow.com/questions/5736398/how-to-calculate-the-svg-path-for-an-arc-of-a-circle/18473154#18473154
-function describeArc(x, y, radius, startAngle, endAngle){
+function describeArc(x, y, radius, startAngle, endAngle) {
 
     var start = polarToCartesian(x, y, radius, endAngle);
     var end = polarToCartesian(x, y, radius, startAngle);
@@ -81,7 +81,7 @@ function describeArc(x, y, radius, startAngle, endAngle){
 
     var d = [
         "M", start.x, start.y,
-        "A", radius, radius, 0, largeArcFlag, 0, end.x, end.y
+        "A", radius, radius, 0, largeArcFlag, 0, end.x, end.y,
     ].join(" ");
 
     return d;
@@ -93,6 +93,6 @@ function polarToCartesian(centerX, centerY, radius, angleInDegrees) {
 
     return {
         x: centerX + (radius * Math.cos(angleInRadians)),
-        y: centerY + (radius * Math.sin(angleInRadians))
+        y: centerY + (radius * Math.sin(angleInRadians)),
     };
 }

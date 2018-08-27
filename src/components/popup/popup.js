@@ -4,6 +4,7 @@ import "./slider/slider";
 renderThermostat(108); //+17 градусов
 
 var popup;
+
 function togglePopup(type) {
     document.body.classList.toggle('with_popup');
     if (type) {
@@ -13,4 +14,5 @@ function togglePopup(type) {
     }
     popup.classList.toggle('show');
 }
+
 window.togglePopup = togglePopup;

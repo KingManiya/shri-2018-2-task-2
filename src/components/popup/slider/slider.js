@@ -24,7 +24,7 @@ function moveSliderValue(slider, e) {
     if (value > valueMax) value = valueMax;
 
     if (vertical) {
-        sliderValue.style.top =  value + 'px';
+        sliderValue.style.top = value + 'px';
         sliderValue.style.left = 0;
     } else {
         sliderValue.style.top = 0;
